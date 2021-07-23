@@ -14,6 +14,7 @@ const submitMessage = () => {
         passcode: hashedPasscode,
         username: username
     });
+    window.location.href="viewMessages.html";
 }
 
 function submitTrim(message) {

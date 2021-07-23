@@ -1,0 +1,51 @@
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ShoppiFi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script defer src="/__/firebase/8.3.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.3.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  </head>
+
+  <body style ="background-color: dimgrey;">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-menu is-active">
+        <a class="navbar-item" href="viewMessages.html">
+          Log in
+        </a>
+      </div>
+    </nav>
+    <h1 class="title has-text-centered" style = "color: ghostwhite;" margin-top:50px;>Search</h1>
+    <section class="hero is-fullheight">
+      <div class="hero-body has-text-centered">
+        <div class="search">
+          <img src="https://media.istockphoto.com/vectors/shopping-cart-icon-isolated-on-white-background-vector-id1206806317?k=6&m=1206806317&s=612x612&w=0&h=Fo7D7nh_QPu758KRdbNTp7m4xSVOxBvJ2cfUvA1_k_U=" width="500px" />
+          <form action="javascript:void(0);">
+            <div class="field">
+              <div class="control">
+                <input class="input is-medium is-rounded" type="text" id="search" placeholder="Shop for an item" maxlength = "100" required/>
+              </div>
+            </div>
+            <br />
+            <button class="button is-block is-fullwidth is-primary is-medium is-rounded" onclick = "shop()">
+              Shop!
+            </button>
+            <div class = "hero-body has-text-centered" id="links">
+                <p>
+                    no item links
+                </p>
+            </div>
+          </form>
+          <br>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="https://cdn.rawgit.com/h2non/jsHashes/master/hashes.js"></script>
+    <script src="js/shop.js"></script>
+    <script src="js/writeMessage.js"></script>
+  </body>
+
+</html>
