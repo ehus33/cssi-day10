@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "shoppifi-77b49",
+    " staging": "shoppifi-77b49"
+  }
+}

@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Secret Messaging App</title>
+    <title>ShoppiFi</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -17,40 +17,40 @@
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
   </head>
 
-  <body>
+  <body style ="background-color: dimgrey;">
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-menu is-active">
         <a class="navbar-item" href="viewMessages.html">
-          View Your Messages
+          Log in
         </a>
       </div>
     </nav>
-    <h1 class="title has-text-centered">Secret Messaging App</h1>
+    <h1 class="title has-text-centered" style = "color: ghostwhite;" margin-top:50px;>Sign Up for ShoppiFi</h1>
     <section class="hero is-fullheight">
       <div class="hero-body has-text-centered">
         <div class="login">
-          <img src="https://image.freepik.com/free-vector/colorful-speech-bubbles-set_74855-6314.jpg" width="325px" />
+          <img src="https://media.istockphoto.com/vectors/shopping-cart-icon-isolated-on-white-background-vector-id1206806317?k=6&m=1206806317&s=612x612&w=0&h=Fo7D7nh_QPu758KRdbNTp7m4xSVOxBvJ2cfUvA1_k_U=" width="500px" />
           <form action="javascript:void(0);">
+            <div class="field">
+              <div class="control">
+                <input class="input is-medium is-rounded" type="text" id="username" placeholder="Enter a username" maxlength = "100" required/>
+              </div>
+            </div>
             <div class="field">
               <div class="control">
                 <input class="input is-medium is-rounded" type="text" id="passcode" placeholder="Enter a passcode" maxlength = "100" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required/>
               </div>
             </div>
-            <div class="field">
-              <div class="control">
-                <textarea class="textarea is-medium is-rounded" type="text" id="message" placeholder="Share a secret message with your friend!" maxlength = "100" required></textarea>
-              </div>
-            </div>
             <br />
             <button class="button is-block is-fullwidth is-primary is-medium is-rounded" onclick = "submitMessage()">
-              Send Message
+              Sign Up!
             </button>
           </form>
           <br>
         </div>
       </div>
     </section>
-    
+    <script type="text/javascript" src="https://cdn.rawgit.com/h2non/jsHashes/master/hashes.js"></script>
     <script src="js/writeMessage.js"></script>
   </body>
 

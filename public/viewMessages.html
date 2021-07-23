@@ -16,21 +16,26 @@
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
   </head>
 
-  <body>
+  <body style ="background-color: dimgrey;">
     <section class="hero is-fullheight">
         <div class="content">
-            <h2 class="has-text-centered mt-6">View Your Messages!</h2>
+            <h2 class="has-text-centered mt-6" style = "color: ghostwhite;">Login Here</h2>
         </div>
         <div id="passcodeInput" class="hero-body has-text-centered">
             <div class="login">
             <form action="javascript:void(0);">
                 <div class="field">
                     <div class="control">
-                        <input class="input is-medium is-rounded" type="text" placeholder="What's the passcode?" id="passcode" required />
+                        <input class="input is-medium is-rounded" type="text" placeholder="Username" id="username" required />
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <input class="input is-medium is-rounded" type="text" placeholder="Passcode" id="passcode" required />
                     </div>
                 </div>
                 <button class="button is-block is-fullwidth is-primary is-medium is-rounded" onclick="getMessages()">
-                    Click Here
+                    Login
                 </button>
             </form>
             <br>
@@ -41,7 +46,7 @@
         </section>
 
     </section>
-    
+    <script type="text/javascript" src="https://cdn.rawgit.com/h2non/jsHashes/master/hashes.js"></script>
     <script src="js/viewMessages.js"></script>
   </body>
 
